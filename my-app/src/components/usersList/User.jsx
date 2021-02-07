@@ -1,11 +1,10 @@
 import './User.css';
 
-function User() {
+function User(props) {
     return (
-        <div>
-            <b>User 1</b>
-            <b>User 2</b>
-            <b>User 3</b>
+        <div data-id={props.id} className="user-wrapp">
+            <h2><small>Name:</small> {props.fullName}, {props.userName}</h2>
+            <h3><small>Email:</small> {props.email}</h3>
         </div>
     );
 }

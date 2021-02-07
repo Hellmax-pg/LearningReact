@@ -1,4 +1,4 @@
-[
+const users = [
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -229,4 +229,5 @@
         "bs": "target end-to-end models"
       }
     }
-  ]
+  ];
+  export default users;

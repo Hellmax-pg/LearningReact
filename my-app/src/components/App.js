@@ -1,25 +1,12 @@
 import './App.css';
 import UserList from './usersList/UserList';
+import users from '../users';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <h2>Hello world!!!</h2>
-      <UserList/>
+    <div className="App test-123">
+      <h2>Hello from applications!</h2>
+      <UserList users = {users}/>
     </div>
   );
 }
