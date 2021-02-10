@@ -19,17 +19,15 @@ import User from  './User';
 // }
 
 function UserList(props) {
-    console.log('users = ', props.users)
+    // const usersJsx = [];
     const usersJsx = props.users.map((user) => {
         return <User id={user.id} fullName={user.name} userName={user.username} email={user.email}/>
         // return <li key = {comment.id}>{comment.text} <b> by {comment.author}</b></li>
     })
   return (
     <div>
-        {usersJsx}
-        {/* <User id="1" fullName="Anton Antonov 1" userName="Bret" email="Sincere@april.biz"/>
-        <User id="2" fullName="Anton Antonov 2" userName="Bret" email="Sincere@april.biz"/>
-        <User id="3" fullName="Anton Antonov 3" userName="Bret" email="Sincere@april.biz"/> */}
+        <h2 className="title">Users list</h2>
+        {usersJsx.length > 0 ? usersJsx : 'There is no users, yet'}
     </div>
   );
 }
